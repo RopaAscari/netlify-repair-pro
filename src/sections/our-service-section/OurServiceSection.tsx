@@ -161,7 +161,7 @@ export const ourServiceSectionQuery = graphql`
         testImage: file(relativePath: {eq: "appliance_image.png"} ){
             childImageSharp {
                 fluid(maxWidth: 500){
-                    
+                    ...GatsbyImageSharpFluid_noBase64
                 }
             }
         }

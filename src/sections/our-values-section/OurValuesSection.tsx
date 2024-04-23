@@ -1,7 +1,6 @@
 import React, {useEffect} from 'react';
 import './ourValuesSection.scss'
 import {graphql, useStaticQuery} from "gatsby";
-import {ourServiceSectionQuery} from "../our-service-section/OurServiceSection";
 import {GatsbyImage, getImage, IGatsbyImageData} from "gatsby-plugin-image";
 
 export const OurValuesSection = () => {
