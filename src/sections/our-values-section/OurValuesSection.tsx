@@ -63,7 +63,7 @@ export const ourValuesSectionQuery = graphql`
             childImageSharp {
                 gatsbyImageData(
                     placeholder: BLURRED
-                    formats: [AUTO, WEBP, AVIF]
+                    formats: [AUTO,]
                 )
             }
         }
@@ -71,7 +71,7 @@ export const ourValuesSectionQuery = graphql`
             childImageSharp {
                 gatsbyImageData(
                     placeholder: BLURRED
-                    formats: [AUTO, WEBP, AVIF]
+                    formats: [AUTO,]
                 )
             }
         }
@@ -79,7 +79,7 @@ export const ourValuesSectionQuery = graphql`
             childImageSharp {
                 gatsbyImageData(
                     placeholder: BLURRED
-                    formats: [AUTO, WEBP, AVIF]
+                    formats: [AUTO,]
                 )
             }
         }
