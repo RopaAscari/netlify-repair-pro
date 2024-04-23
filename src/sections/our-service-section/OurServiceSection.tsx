@@ -91,7 +91,7 @@ export const ourServiceSectionQuery = graphql`
                 gatsbyImageData(
                     width: 500
                     placeholder: BLURRED
-                    formats: [AUTO, WEBP, AVIF]
+                    formats: [AUTO,]
                 )
             }
         }
@@ -100,7 +100,7 @@ export const ourServiceSectionQuery = graphql`
                 gatsbyImageData(
                     width: 500
                     placeholder: BLURRED
-                    formats: [AUTO, WEBP, AVIF]
+                    formats: [AUTO,]
                 )
             }
         }
@@ -109,7 +109,7 @@ export const ourServiceSectionQuery = graphql`
                 gatsbyImageData(
                     width: 500
                     placeholder: BLURRED
-                    formats: [AUTO, WEBP, AVIF]
+                    formats: [AUTO,]
                 )
             }
         }
@@ -118,7 +118,7 @@ export const ourServiceSectionQuery = graphql`
                 gatsbyImageData(
                     width: 500
                     placeholder: BLURRED
-                    formats: [AUTO, WEBP, AVIF]
+                    formats: [AUTO,]
                 )
             }
         }
@@ -127,7 +127,7 @@ export const ourServiceSectionQuery = graphql`
                 gatsbyImageData(
                     width: 500
                     placeholder: BLURRED
-                    formats: [AUTO, WEBP, AVIF]
+                    formats: [AUTO,]
                 )
             }
         }
@@ -136,7 +136,7 @@ export const ourServiceSectionQuery = graphql`
                 gatsbyImageData(
                     width: 500
                     placeholder: BLURRED
-                    formats: [AUTO, WEBP, AVIF]
+                    formats: [AUTO,]
                 )
             }
         }
@@ -145,7 +145,7 @@ export const ourServiceSectionQuery = graphql`
                 gatsbyImageData(
                     width: 500
                     placeholder: BLURRED
-                    formats: [AUTO, WEBP, AVIF]
+                    formats: [AUTO,]
                 )
             }
         }
@@ -154,7 +154,7 @@ export const ourServiceSectionQuery = graphql`
                 gatsbyImageData(
                     width: 500
                     placeholder: BLURRED
-                    formats: [AUTO, WEBP, AVIF]
+                    formats: [AUTO,]
                 )
             }
         }
@@ -163,7 +163,7 @@ export const ourServiceSectionQuery = graphql`
                 gatsbyImageData(
                     width: 500
                     placeholder: BLURRED
-                    formats: [AUTO, WEBP, AVIF]
+                    formats: [AUTO,]
                 )
             }
         }
