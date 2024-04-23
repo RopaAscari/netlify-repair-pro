@@ -1,0 +1,83 @@
+@use '/src/styles/_variables';
+@use '/src/styles/breakpoints' as *;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+#root, #__next {
+  isolation: isolate;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+  font-family: Inter, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+  overflow-wrap: break-word;
+  font-style: normal;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+img, picture, video, canvas, svg {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.max {
+  //background: #4F6EF7!important;
+  max-width: variables.$main_max_width;
+}
+
+
+.scroll {
+  overflow-y: scroll;
+}
+
+.scroll::-webkit-scrollbar {
+  //display: none;
+  width: 6px;
+  background-color: transparent;
+}
+
+.scroll::-webkit-scrollbar-track {
+  /*-webkit-box-shadow: inset 0 0 6px #C9C9C9;*/
+  border-radius: 10px;
+  background-color: inherit;
+}
+
+.scroll::-webkit-scrollbar-thumb {
+  border-radius: 3px;
+  background-color: #BEBEBE;
+}
+
+#section-heading {
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 133.19%;
+  text-transform: capitalize;
+  color: variables.$secondary_color;
+  margin-bottom: 15px;
+}
+
+p {
+  font-size: 18px;
+  line-height: 150.0%;
+}

@@ -1,0 +1,101 @@
+@use 'src/styles/variables';
+@use 'src/styles/breakpoints' as *;
+
+
+.button {
+  border-radius: 4px;
+  padding: 15px 35px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px 0;
+  cursor: pointer;
+  border: 1px solid transparent;
+  outline: none;
+  font-family: Roboto, sans-serif;
+
+
+  @include media('<=tablet') {
+    padding: 10px 25px;
+  }
+
+  @include media('<=500px') {
+
+  }
+
+}
+
+.primary {
+  background-color: variables.$secondary_color;
+  color: #ffffff;
+}
+
+.primary:hover {
+  background-color: lighten(variables.$secondary_color, 2%);
+}
+
+.primary_2 {
+  background-color: #F7964F;
+  color: #ffffff;
+}
+
+.secondary {
+  background-color: unset;
+  color: #344054;
+  border: solid 1px #D0D5DD;
+}
+
+.secondary:hover {
+  background-color: #ffffff;
+  color: #22232C;
+}
+
+.tertiary {
+  background-color: rgba(255, 255, 255, 0);
+  color: #ffffff;
+  border: 1px solid #ffffff;
+
+}
+
+.tertiary:hover {
+  background-color: #4F6EF7;
+  color: #ffffff;
+  border: 1px solid #4F6EF7;
+}
+
+.outlined {
+  background-color: transparent;
+  border: 1px solid #1a5699;
+  color: #1a5699;
+}
+
+.outlined:hover {
+  background-color: #1a5699;
+  border: 1px solid #1a5699;
+  color: #ffffff;
+}
+
+.cancel {
+  background-color: transparent;
+  border: 1px solid #ff7374;
+  color: #ff7374;
+}
+
+.cancel:hover {
+  transition: background-color 0.2s ease-in, color 0.2s ease-in;
+  background-color: #ff7374;
+  border: 1px solid #ff7374;
+  color: #ffffff;
+}
+
+.disabled {
+  background-color: #5a5c5f;
+  color: #ffffff;
+}
+
+.disabled:hover {
+  cursor: unset;
+  background-color: #5a5c5f;
+  color: #ffffff;
+}

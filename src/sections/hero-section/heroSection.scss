@@ -1,0 +1,69 @@
+@use 'src/styles/variables';
+@use 'src/styles/breakpoints' as *;
+
+.hero {
+
+  &__wrapper {
+    width: variables.$main_width;
+    display: grid;
+    z-index: 1;
+
+    &__details {
+      background: url("../../images/hero-background.jpg") no-repeat center 0;
+      display: grid;
+      position: relative;
+      align-items: center;
+      justify-content: center;
+      background-size: cover;
+      grid-template-columns: 1fr auto;
+      grid-gap: 50px;
+
+      padding: 0 0 0 10%;
+
+      &__left {
+        height: 100%;;
+        padding: 20% 0 0 0;
+
+        h1 {
+          font-weight: 700;
+          color: #e7e7e7;
+          font-size: 45px;
+          line-height: 55px;
+          max-width: 550px;
+          margin-bottom: 30px;
+        }
+
+        p {
+          color: rgb(215, 215, 215);
+          max-width: 500px;
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 28px;
+        }
+      }
+
+      &__right {
+        padding-right: 150px;
+        margin-bottom: -50px;
+
+        .gatsby-image-wrapper {
+          margin-right: -20px;
+
+        }
+
+        img {
+        }
+      }
+    }
+
+    &__banner {
+      position: relative;
+      z-index: 2;
+      background-color: variables.$secondary_color;
+      min-height: 75px;
+      width: 100vw;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+}

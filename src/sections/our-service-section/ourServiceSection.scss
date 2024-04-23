@@ -1,0 +1,129 @@
+@use 'src/styles/variables';
+@use 'src/styles/breakpoints' as *;
+
+.our-services {
+  display: grid;
+  justify-content: center;
+  padding: 100px 0;
+
+  &__top {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-gap: 25px;
+    justify-items: start;
+    margin-bottom: 70px;
+
+    &__left {
+
+      h1 {
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 133.19%;
+        text-transform: capitalize;
+        color: variables.$primary_color;
+        max-width: 500px;
+
+        span {
+          color: variables.$secondary_color;
+        }
+      }
+    }
+
+    &__right {
+
+      p {
+        margin-top: 10px;
+        max-width: 700px;
+      }
+    }
+  }
+
+  &__bottom {
+    display: grid;
+    grid-gap: 25px;
+    justify-content: center;
+    grid-template-areas:"carpentry carpentry landscape landscape"
+                          "appliance appliance closet closet"
+                          "garden electrical plumbing painting"
+                          "welding welding plumbing painting";
+
+    &__service {
+      position: relative;
+
+      &:hover {
+        img {
+          transform: scale(1.1);
+        }
+      }
+
+      img {
+        transition: transform .20s;
+      }
+
+      &__content {
+        padding: 25px;
+        display: grid;
+        align-items: end;
+        bottom: 0;
+        width: 100%;
+        max-height: 50%;
+        min-height: 153px;
+        position: absolute;
+        background: linear-gradient(180deg, rgba(24, 35, 51, 0) 0%, #182333 100%);
+
+        span {
+          font-weight: 600;
+          font-size: 25px;
+          color: white;
+        }
+
+      }
+    }
+
+    .appliance {
+      display: grid;
+      grid-area: appliance;
+    }
+
+    .carpentry {
+      display: grid;
+      grid-area: carpentry;
+    }
+
+    .closet {
+      display: grid;
+      grid-area: closet;
+    }
+
+    .landscape {
+      display: grid;
+      grid-area: landscape;
+    }
+
+    .painting {
+      display: grid;
+      grid-area: painting;
+    }
+
+    .plumbing {
+      display: grid;
+      grid-area: plumbing;
+    }
+
+    .electrical {
+      display: grid;
+      grid-area: electrical;
+    }
+
+    .welding {
+      display: grid;
+      grid-area: welding;
+    }
+
+    .garden {
+      display: grid;
+      grid-area: garden;
+    }
+  }
+
+}

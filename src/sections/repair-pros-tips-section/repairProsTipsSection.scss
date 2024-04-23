@@ -1,0 +1,138 @@
+@use 'src/styles/variables';
+@use 'src/styles/breakpoints' as *;
+
+.repair-pro-tips {
+  display: grid;
+  justify-content: center;
+  padding: 100px 0;
+  background: #F3F3F3;
+
+
+  &__top {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-gap: 25px;
+    justify-items: start;
+    margin-bottom: 70px;
+
+    &__left {
+
+      h1 {
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 133.19%;
+        text-transform: capitalize;
+        color: variables.$primary_color;
+        max-width: 500px;
+
+        span {
+          color: variables.$secondary_color;
+        }
+      }
+    }
+
+    &__right {
+
+      p {
+        margin-top: 10px;
+        max-width: 700px;
+      }
+    }
+  }
+
+  &__bottom {
+    height: 100%;
+    width: 80vw;
+
+    &_videos {
+      display: grid;
+      //display: grid;
+      //grid-auto-flow: column;
+      //max-width: 80vw;
+      //grid-gap: 25px;
+
+      &_video {
+        overflow: hidden;
+       width: 565px;
+        //width: 100%;
+        height: 416px;
+        background: variables.$primary_color;
+      }
+    }
+
+    .slide-navigation {
+      display: grid;
+      grid-template-columns: auto auto;
+      justify-content: end;
+      grid-gap: 20px;
+      margin-top: 25px;
+      cursor: pointer;
+
+      &_option {
+        display: grid;
+        grid-auto-flow: column;
+        align-items: center;
+        grid-gap: 10px;
+
+        span {
+          font-weight: 400;
+          font-size: 20px;
+          line-height: 150%;
+          color: variables.$primary_color;
+        }
+
+        &:first-child {
+          svg {
+            transform: scale(-1);
+          }
+        }
+
+        &:hover {
+
+          span {
+            color: variables.$secondary_color;
+          }
+
+          svg path {
+            fill: variables.$secondary_color;
+          }
+        }
+      }
+    }
+  }
+
+  .swiper {
+    width: 100%;
+    z-index: 0;
+
+    &-wrapper {
+
+      .swiper-slide {
+        width: 565px;
+
+        img {
+          display: block;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+
+    .append-buttons {
+      text-align: center;
+    }
+
+    .append-buttons button {
+      display: inline-block;
+      cursor: pointer;
+      border: 1px solid #007aff;
+      color: #007aff;
+      text-decoration: none;
+      padding: 4px 10px;
+      border-radius: 4px;
+      margin: 0 10px;
+      font-size: 13px;
+    }
+  }
+}

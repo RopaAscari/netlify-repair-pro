@@ -1,0 +1,89 @@
+@use '../../styles/breakpoints' as *;
+@use "/src/styles/variables";
+
+.accordion {
+  width: 100%;
+  /*max-width: 470px;*/
+}
+
+.panel {
+  background-color: transparent;
+  padding: 16px 28px;
+  cursor: pointer;
+  margin-bottom: 15px;
+  border-bottom: solid 1px #d9dde0;
+
+  &:last-child {
+    border: none;
+  }
+
+  &__label {
+
+    color: variables.$paragraph_text_color;
+    position: relative;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-gap: 20px;
+    align-items: center;
+    text-align: left;
+
+    img {
+      max-width: 55.47px;
+      max-height: 55.47px;
+    }
+
+    span {
+      transition: color 0.2s linear;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 30px;
+
+    }
+  }
+
+  .expand_active {
+    transition: transform .8s ease-in-out;
+    transform: rotate(0deg);
+
+  }
+
+  .expand_inactive {
+    transform: rotate(540deg);
+    transition: transform .8s ease-in-out;
+  }
+
+  &:focus, &:hover {
+    outline: none;
+
+  }
+
+  &__inner {
+    overflow: hidden;
+    will-change: height;
+    background: transparent;
+    transition: height 0.4s cubic-bezier(0.65, 0.05, 0.36, 1);
+
+    &__content {
+      margin: 15px 15px 15px 0;
+      font-size: 14px;
+      transition: opacity 0.3s linear 0.18s;
+
+      p {
+        padding-bottom: 5px !important;
+        font-size: 18px;
+        font-weight: 300;
+      }
+
+    }
+  }
+
+}
+
+.panel[aria-expanded='true'] .panel__content {
+  opacity: 1;
+}
+
+.panel[aria-expanded='true'] .panel__label:before {
+  transform: rotate(0deg);
+}

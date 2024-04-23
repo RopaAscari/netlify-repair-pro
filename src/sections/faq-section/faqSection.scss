@@ -1,0 +1,65 @@
+@use 'src/styles/variables';
+@use 'src/styles/breakpoints' as *;
+
+.faq {
+  display: grid;
+  //justify-content: center;
+  padding: 100px 0;
+
+  &__top {
+    justify-self: center;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-gap: 25px;
+    justify-items: start;
+    margin-bottom: 70px;
+
+    &__left {
+
+      h1 {
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 133.19%;
+        text-transform: capitalize;
+        color: variables.$primary_color;
+        max-width: 600px;
+
+        span {
+          color: variables.$secondary_color;
+        }
+      }
+    }
+
+    &__right {
+
+      p {
+        margin-top: 10px;
+        max-width: 700px;
+      }
+    }
+  }
+
+  &__bottom {
+    padding: 50px 0 150px;
+    background: linear-gradient(245.84deg, #EFF0F2 34.51%, #F4F4F6 93.64%);;
+    //background: #EFF0F2;
+    display: grid;
+
+    &__wrapper {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      grid-gap: 50px;
+      justify-self: center;
+      justify-content: center;
+
+
+      &__left {
+
+      }
+
+      &__right {
+        max-width: 800px;
+      }
+    }
+  }
+}

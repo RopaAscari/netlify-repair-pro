@@ -1,0 +1,56 @@
+@use 'src/styles/variables';
+@use 'src/styles/breakpoints' as *;
+
+
+.what-we-do {
+  display: grid;
+  justify-content: center;
+  padding: 150px 0;
+  background: #FCFCFC;
+
+  .container {
+    max-width: 76vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    grid-gap: 5px;
+    color: variables.$primary_color;
+
+    &__left {
+      display: grid;
+      align-items: center;
+      position: relative;
+
+      &__img {
+        width: 80%;
+        height: 115%;
+        background: #4F6EF7;
+      }
+    }
+
+    &__right {
+
+      h1 {
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 133.19%;
+        margin-bottom: 20px;
+      }
+
+      &__solutions {
+        margin-top: 50px;
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-gap: 40px;
+
+        &__solution {
+          h3 {
+            font-weight: 600;
+            color: variables.$primary_color;
+            margin-bottom: 10px;
+          }
+        }
+      }
+    }
+  }
+}

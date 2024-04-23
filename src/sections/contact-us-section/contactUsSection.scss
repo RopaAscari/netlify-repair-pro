@@ -1,0 +1,38 @@
+@use 'src/styles/variables';
+@use 'src/styles/breakpoints' as *;
+
+
+.contact-us-section {
+  display: grid;
+  justify-content: center;
+  text-align: center;
+
+  //padding: 100px 0;
+
+  margin-top: -200px;
+  margin-bottom: 50px;
+
+  &__container {
+    width: 75vw;
+    background: #F9FAFB;
+    padding: 50px;
+    border-radius: 15px;
+
+    .image-container {
+      display: grid;
+      grid-auto-flow: column;
+      justify-content: center;
+      grid-gap: 10px;
+      margin-bottom: 35px;
+
+      &__image {
+        display: inline-block;
+        height: 50px;
+        width: 50px;
+        background: #1ab51e;
+      }
+
+    }
+  }
+
+}

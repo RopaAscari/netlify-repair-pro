@@ -1,0 +1,27 @@
+@use 'breakpoints' as *;
+
+//colors
+$primary_color: #182333;
+$secondary_color: #FF704B;
+$tertiary_color: red;
+$bg_color: #f9fafb;
+
+$bg_color_dark: #22232C;
+$bg_color_lighten: #30313A;
+//$bg_color_dark: #020d1c;
+
+$heading_text_color: #22232C;
+$paragraph_text_color: #22232C;
+
+//text
+$heading_lg: 50px;
+$heading_md: 40px;
+$heading_sm: 30px;
+
+$main_max_width: 1650px;
+
+$main_width: 85vw;
+
+//@include media('<lg-desktop') {
+//
+//}
